@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ЛР№4</title>
+    <style type="text/css">
+        .widthimg
+        {
+            width:100%;
+            height:100%;
+            display: block;
+        }
+        .mar0pad0
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        #header{
+            position: relative;
+            background:linear-gradient(to top, black,gold);
+            height:50px;
+            width: 100%;
+            display: flex;
+        }
+
+        #header1{
+            position: absolute;
+            width: 100%;
+            font-size:20px;
+            color:silver;
+            left:1%;
+        }
+
+        #leftheader{
+            line-height: 2em;
+            width: 25%;
+            float: left;
+        }
+
+        .butt{
+            position: relative;
+            color: gold;
+            float: left;
+            margin: 10px;
+            width: 10%;
+            text-align: center;
+            border:1px solid black;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+
+        #logo{   
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            right: 2%;
+        }
+
+        #box{
+            background: rgb(1, 1, 1, 0.1); 
+            width: 30%;
+            border-radius: 30px 0px;
+            position: absolute;
+            left: 10%;
+            top: 30%;
+            border:2px solid gold;
+            height: 25%; 
+            color: silver;
+        }
+        h1{
+            font-weight: normal;
+            position: relative;
+            top: 70px;
+            left: 80px;
+            font-size:40px;
+        }
+        .text{
+            top: 10px;
+            left: -40px;
+            position: relative; 
+            text-align: center;
+            font-size:20px;
+        }
+
+        #icon{
+            width: 100%;
+            margin-top: -6%;
+            z-index:1;
+            top:100%;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+
+        .block{
+            position: relative;
+            width: 12%;
+            height:300px;
+            text-align: center;
+            padding: 2px;
+            margin:  0px 10px;
+            border:1px solid black;
+            background:silver;
+            border-radius: 25px;
+            font-size:19px;
+        }
+
+        .textblock{
+            left: 5%;
+            right: 5%;
+            position: absolute;
+            top: 54%;
+            font-size:11px;
+        }
+
+        .butt2{
+            color: red;
+            position: absolute;
+            top: 78%;
+            left: 20%;
+            width: 50%;
+            border:1px solid black;
+            padding: 5% ;
+            border-radius: 5px;
+            font-size:20px;
+        }
+
+        .foot{
+            color: white;
+            font-size:14px;
+            background-color: black;
+            width: 100%;
+            height: 70px;
+            position: relative; 
+            bottom: 15px; 
+        }
+
+        .text2{
+            position: absolute;
+            left: 1%;
+        }
+
+        .gm{
+            position: absolute;
+            right: 1%;
+        }
+#circle {
+  background: gold;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50%;
+  top:175%;
+  margin-left: 100px;
+color: #fff;
+  height: 300px;
+  position: absolute;
+  width: 300px;
+}
+
+.circle-content {
+  hyphens: auto;
+  margin: 0.75em;
+  text-align: center;
+}
+
+
+@supports (shape-outside: circle(50%)) {
+  .circle-content {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #circle::before,
+  .circle-content::before {
+    content: "";
+    height: 100%;
+    width: 50%;
+  }
+  
+  #circle::before {
+    float: left;
+    shape-outside: polygon(
+      0 0, 100% 0, 60% 4%, 40% 10%, 20% 20%, 10% 28.2%, 5% 34.4%, 0 50%,
+      5% 65.6%, 10% 71.8%, 20% 80%, 40% 90%, 60% 96%, 100% 100%, 0 100%
+    );
+  }
+  
+  .circle-content::before {
+    float: right;
+    shape-outside: polygon(
+      100% 0, 0 0, 40% 4%, 60% 10%, 80% 20%, 90% 28.2%, 95% 34.4%, 100% 50%,
+      95% 65.6%, 90% 71.8%, 80% 80%, 60% 90%, 40% 96%, 0 100%, 100% 100%
+    );
+  }
+}
+
+               
+        @media screen and (max-width: 1024px)
+        {
+        .widthimg
+        {
+            width:100%;
+            height:100%;
+            display: block;
+        }
+        .mar0pad0
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        #header{
+            height:90px;
+        }
+        #header1{
+            left: 2%;
+            top: 20%;
+            font-size:30px;
+        }
+        #leftheader{
+            width: 18%;
+        }
+        .butt{
+            height: 50px;
+            margin: 7px;
+            width: 13%;
+        }
+        #logo{   
+            width: 70px;
+            height: 70px;
+            right: 4%;
+        }
+        #box{ 
+            width: 35%;
+            left:  5%;
+            height: 30%; 
+        }
+        h1{
+            left: 10px;
+            font-size:30px;
+        }
+
+        .text{
+            font-size:23px;
+        }
+        #icon{
+            width: 100%;
+            margin-top: -30%;
+            z-index:1;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+        .block{
+            width: 20%;
+            margin:  0px 12px;
+        }
+        .textblock{
+            top: 45%;
+            font-size:15px;
+        }
+
+        .butt2{
+            top: 77%;
+            font-size:23px;
+        }
+        #foot{
+            font-size:18px;
+            height: 50px;
+        }
+        #circle {
+  border-width: 5px;
+  border-radius: 50%;
+  top:125%;
+  margin-left: 100px;
+  height: 200px;
+  width: 200px;
+}
+
+.circle-content {
+  hyphens: auto;
+  margin: 0.75em;
+  text-align: center;
+}
+
+
+@supports (shape-outside: circle(50%)) {
+  .circle-content {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #circle::before,
+  .circle-content::before {
+    content: "";
+    height: 100%;
+    width: 50%;
+  }
+  
+  #circle::before {
+    float: left;
+    shape-outside: polygon(
+      0 0, 100% 0, 60% 4%, 40% 10%, 20% 20%, 10% 28.2%, 5% 34.4%, 0 50%,
+      5% 65.6%, 10% 71.8%, 20% 80%, 40% 90%, 60% 96%, 100% 100%, 0 100%
+    );
+  }
+  
+  .circle-content::before {
+    float: right;
+    shape-outside: polygon(
+      100% 0, 0 0, 40% 4%, 60% 10%, 80% 20%, 90% 28.2%, 95% 34.4%, 100% 50%,
+      95% 65.6%, 90% 71.8%, 80% 80%, 60% 90%, 40% 96%, 0 100%, 100% 100%
+    );
+  }
+}
+        }
+
+
+
+        @media screen and (max-width: 768px)
+        {
+             .widthimg
+        {
+            width:100%;
+            height:100%;
+            display: block;
+        }
+        .mar0pad0
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        #header{
+            height:110px;
+        }
+        #header1{
+            top: 37%;
+            font-size:27px;
+        }
+        #leftheader{
+            width: 10%;
+        }
+        .butt{
+            height: 40px;
+            margin: 6px;
+            width: 15%;
+        }
+        #logo{   
+            width: 60px;
+            height: 60px;
+            right: 2%;
+        }
+        #box{ 
+            width: 33%;
+            left:  7%;
+            height: 25%; 
+        }
+        h1{
+            font-size:32px;
+        }
+        .text{
+            font-size:25px;
+        }
+        #icon{
+            width: 100%;
+            margin-top: -50%;
+            z-index:1;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+        .block{
+            width: 17%;
+            margin:  0px 10px;
+        }
+        .textblock{
+            top: 42%;
+            font-size:15px;
+        }
+        .butt2{
+            top: 75%;
+            font-size:23px;
+        }
+        #foot{
+            font-size:20px;
+            height: 90px;
+        }
+         #circle {
+  border-width: 5px;
+  border-radius: 50%;
+  top:115%;
+  margin-left: 100px;
+  height: 150px;
+  width: 150px;
+}
+
+.circle-content {
+  hyphens: auto;
+  margin: 0.75em;
+  text-align: center;
+}
+
+
+@supports (shape-outside: circle(50%)) {
+  .circle-content {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #circle::before,
+  .circle-content::before {
+    content: "";
+    height: 100%;
+    width: 50%;
+  }
+  
+  #circle::before {
+    float: left;
+    shape-outside: polygon(
+      0 0, 100% 0, 60% 4%, 40% 10%, 20% 20%, 10% 28.2%, 5% 34.4%, 0 50%,
+      5% 65.6%, 10% 71.8%, 20% 80%, 40% 90%, 60% 96%, 100% 100%, 0 100%
+    );
+  }
+  
+  .circle-content::before {
+    float: right;
+    shape-outside: polygon(
+      100% 0, 0 0, 40% 4%, 60% 10%, 80% 20%, 90% 28.2%, 95% 34.4%, 100% 50%,
+      95% 65.6%, 90% 71.8%, 80% 80%, 60% 90%, 40% 96%, 0 100%, 100% 100%
+    );
+  }
+}
+        }
+        @media screen and (max-width: 425px)
+        {
+             .widthimg
+        {
+            width:100%;
+            height:400px;
+            display: block;
+        }
+        .mar0pad0
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        #header{
+            height:40px;
+        }
+        #header1{
+            top: 7%;
+            font-size:14px;
+        }
+        #leftheader{
+            width: 10%;
+        }
+        .butt{
+            height: 20px;
+            margin: 7px;
+            width: 13%;
+        }
+        #logo{   
+            width: 35px;
+            height: 35px;
+            right: 1%;
+        }
+        #box{ 
+            width: 33%;
+            left:  7%;
+            height: 10%; 
+            top:10%;
+        }
+        h1{
+            font-size:14px;
+            top:30%;
+        }
+        .text{
+            font-size:10px;
+            top:-20%;
+            left: 5%;
+        }
+        #icon{
+            width: 100%;
+            margin-top: -150%;
+            z-index:1;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+        .block{
+            height:200px;
+            width: 20%;
+            margin:  0px 5px;
+        }
+        .textblock{
+            top: 40%;
+            font-size:10px;
+        }
+        .butt2{
+            top: 80%;
+            font-size:13px;
+        }
+        #foot{
+            font-size:9px;
+            height: 90px;
+        }
+         #circle {
+  border-width: 5px;
+  border-radius: 50%;
+  top:75%;
+  margin-left: 50px;
+  height: 75px;
+  width: 75px;
+}
+
+.circle-content {
+  hyphens: auto;
+  margin: 0.75em;
+  text-align: center;
+  font-size: 10px;
+}
+
+
+@supports (shape-outside: circle(50%)) {
+  .circle-content {
+    height: 100%;
+    margin: 0;
+  }
+  
+  #circle::before,
+  .circle-content::before {
+    content: "";
+    height: 100%;
+    width: 50%;
+  }
+  
+  #circle::before {
+    float: left;
+    shape-outside: polygon(
+      0 0, 100% 0, 60% 4%, 40% 10%, 20% 20%, 10% 28.2%, 5% 34.4%, 0 50%,
+      5% 65.6%, 10% 71.8%, 20% 80%, 40% 90%, 60% 96%, 100% 100%, 0 100%
+    );
+  }
+  
+  .circle-content::before {
+    float: right;
+    shape-outside: polygon(
+      100% 0, 0 0, 40% 4%, 60% 10%, 80% 20%, 90% 28.2%, 95% 34.4%, 100% 50%,
+      95% 65.6%, 90% 71.8%, 80% 80%, 60% 90%, 40% 96%, 0 100%, 100% 100%
+    );
+  }
+}
+        }
+        @media screen and (max-width: 320px)
+        {
+             .widthimg
+        {
+            width:100%;
+            height:400px;
+            display: block;
+        }
+        .mar0pad0
+        {
+            padding: 0px;
+            margin: 0px;
+        }
+        #header{
+            height:40px;
+        }
+        #header1{
+            top: 7%;
+            font-size:14px;
+        }
+        #leftheader{
+            width: 10%;
+        }
+        .butt{
+            height: 20px;
+            margin: 7px;
+            width: 12%;
+        }
+        #logo{   
+            width: 30px;
+            height: 30px;
+            right: 1%;
+        }
+        #box{ 
+            width: 33%;
+            left:  7%;
+            height: 10%; 
+            top:10%;
+        }
+        h1{
+            font-size:14px;
+            top:30%;
+        }
+        .text{
+            font-size:10px;
+            top:-20%;
+            left: 5%;
+        }
+        #icon{
+            width: 100%;
+            margin-top: -200%;
+            z-index:1;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+        }
+        .block{
+            height:200px;
+            width: 20%;
+            margin:  0px 5px;
+        }
+        .textblock{
+            top: 30%;
+            font-size:10px;
+        }
+        .butt2{
+            top: 80%;
+            font-size:10px;
+        }
+        #foot{
+            font-size:9px;
+            height: 90px;
+        }
+        }
+    </style>
+</head>
+
+<body class="mar0pad0">
+<div id="header">
+    <div id="header1">
+        <div id="leftheader">Меню</div>
+        <div class="butt">Кнопка</div> 
+        <div class="butt">Кнопка</div>
+        <div class="butt">Кнопка</div>
+        <div class="butt">Кнопка</div>
+        <div>
+            <img src="img/3.png" id="logo">
+        </div>
+</div>
+</div>
+<div>
+<img class="widthimg" src="img/1.jpg">
+         <div id="box">
+            <h1>Заголовок</h1><br>
+             <p class="text">текст</p>
+        </div>
+
+        <div id="icon">
+        <div class="block"><div class="textblock">текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст </div><div class="butt2">Кнопка</div></div>
+        <div class="block"><div class="textblock">текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст</div><div class="butt2">Кнопка</div></div>
+        <div class="block"><div class="textblock">текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст </div><div class="butt2">Кнопка</div></div>
+        <div class="block"><div class="textblock">текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст</div><div class="butt2">Кнопка</div></div>
+        
+</div>
+</div>
+
+<div id="header" style="background:linear-gradient(to top, gold,black);"></div>
+<div id="header" style="background:gold;"></div>
+<div id="header" style="background:linear-gradient(to top, black,gold);"></div>
+      <div id="circle">
+          <p class="circle-content">
+            This text defiantly wraps within its circular container!
+          </p>
+        </div>  
+<div>
+<img class="widthimg" src="img/2.jpg">       
+</div>
+
+<div id="foot">
+    <p class="text2">Контакты:</p><br>
+    <p class="text2">Тел: +1234565678</p><br>
+    <p class="text2">Улица ламба 1</p><br>
+    <p class="gm">lamborgini@gmail.com</p>
+</div>
+</body>
+</html>
